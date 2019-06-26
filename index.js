@@ -1,7 +1,7 @@
 var place = 0
 function takeANumber(katzDeliLine){
   place++
-  katzDeliLine.push(` ${place}`)
+  katzDeliLine.push(place)
   return `Welcome, You are number ${place}`
 }
 function nowServing(katzDeliLine){
