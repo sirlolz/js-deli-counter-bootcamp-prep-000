@@ -1,8 +1,8 @@
-function takeANumber(katzDeliLine,){
-  var place = 0
+var place = 0
+function takeANumber(katzDeliLine){
   place++
-  katzDeliLine.push(`Welcome, You are number ${place}`)
-  return katzDeliLine[place]
+  katzDeliLine.push(` ${place}`)
+  return `Welcome, You are number ${place}`
 }
 function nowServing(katzDeliLine){
   if (katzDeliLine.length === 0){
@@ -11,7 +11,7 @@ function nowServing(katzDeliLine){
   return `Currently serving ${katzDeliLine.shift()}.`
 }
 
-function currentLine(katzDeliLine,){
+function currentLine(katzDeliLine){
   if (katzDeliLine.length === 0){
     return "The line is currently empty."
   }
